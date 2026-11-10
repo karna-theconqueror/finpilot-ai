@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-bg-primary text-text-primary font-sans antialiased;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply rounded-2xl border border-white/5 bg-bg-card shadow-card;
+  }
+  .section-title {
+    @apply text-2xl font-semibold tracking-tight text-text-primary sm:text-3xl;
+  }
+  .section-subtitle {
+    @apply mt-2 max-w-2xl text-sm text-text-secondary sm:text-base;
+  }
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(167,178,196,0.25); border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
