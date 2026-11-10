@@ -2,7 +2,6 @@ services:
   - type: web
     name: finpilot-ai
     runtime: static
-    rootDir: finpilot-ai
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     routes:
